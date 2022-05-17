@@ -1,0 +1,62 @@
+@import '../../sass/config';
+
+.games_container {
+  width: 80%;
+  min-height: calc(100vh - 20rem);
+  margin: 20rem auto 0;
+}
+
+.games_title {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  color: $__clr_text;
+  margin-bottom: 6.4rem;
+}
+
+.games {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.modal {
+  bottom: 10%;
+
+  max-width: 60rem;
+  overflow: auto;
+}
+
+.modal_content_video {
+  position: relative;
+
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.modal_content_video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .games_container {
+    width: 90%;
+  }
+  .games_title {
+    font-size: 3.6rem;
+    margin-bottom: 5.6rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .games_title {
+    font-size: 2.6rem;
+    margin-bottom: 3.2rem;
+  }
+}

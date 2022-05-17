@@ -1,0 +1,28 @@
+@import '../../../../sass/config';
+
+.modal {
+  bottom: 10%;
+
+  max-width: 40rem;
+}
+
+.msgBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.8rem;
+}
+
+.msgBox_msg {
+  font-size: 1.8rem;
+  color: $__clr_text;
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .msgBox_msg {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../sass/config';
+
+.error_msg,
+.error_msg_top {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font: 1.8rem $__font_primary;
+  text-transform: capitalize;
+  color: $__clr_text;
+}
+
+.error_msg {
+  margin-top: 1.6rem;
+}
+
+.error_msg_top {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.8rem);
+}
+
+.error_msg_icon {
+  height: 2.8rem;
+}

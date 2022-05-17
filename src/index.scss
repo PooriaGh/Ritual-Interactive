@@ -1,0 +1,70 @@
+@import './sass/config';
+
+html {
+  font-size: 10px;
+  font-family: $__font_primary;
+}
+
+body {
+  background-color: $__clr_background;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $__clr_text;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(183, 183, 216, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient($__clr_main, $__clr_main_dark);
+  border: 0.3rem solid $__clr_main_dark;
+  border-radius: 100vw;
+}
+
+@supports (scrollbar-color: $__clr_main $__clr_background) {
+  * {
+    scrollbar-color: $__clr_main $__clr_background;
+    scrollbar-width: thin;
+  }
+}
+
+.animated-placeholder {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+  }
+
+  &-enter-active,
+  &-exit-active {
+    transition: opacity 0.2s;
+  }
+}

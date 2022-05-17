@@ -1,0 +1,17 @@
+.backdrop_visible,
+.backdrop_hidden {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop_visible {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.backdrop_hidden {
+  background-color: transparent;
+}

@@ -1,0 +1,43 @@
+.animated-error-modal {
+  &-enter {
+    opacity: 0;
+    bottom: -20%;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    bottom: 5%;
+    transition: opacity 0.3s, bottom 0.3s ease-out;
+  }
+
+  &-exit {
+    opacity: 1;
+    bottom: 5%;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    bottom: -20%;
+    transition: opacity 0.3s, bottom 0.3s ease-in;
+  }
+}
+
+.animated-error-modal-message {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}

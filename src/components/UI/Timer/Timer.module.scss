@@ -1,0 +1,18 @@
+@import '../../../sass/config';
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  height: 100%;
+}
+
+.timer_text {
+  position: absolute;
+
+  font-size: 3.2rem;
+  color: $__clr_text;
+}

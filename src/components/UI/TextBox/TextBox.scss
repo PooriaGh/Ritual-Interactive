@@ -1,0 +1,19 @@
+.animated-textbox {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+}

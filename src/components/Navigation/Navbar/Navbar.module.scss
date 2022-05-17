@@ -1,0 +1,106 @@
+@import '../../../sass/config';
+
+.navbar {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 15.1rem;
+  padding: 1.6rem 10% 8rem;
+  background-image: linear-gradient($__clr_background, transparent);
+  z-index: 1;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: $__clr_text;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.navbar_item_logo {
+  position: absolute;
+  left: 10%;
+}
+
+.navbar_item_lang {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  right: 10%;
+
+  cursor: pointer;
+}
+
+.navbar_item_lang_box {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  width: 7.5rem;
+  height: 2.2rem;
+  margin-left: 1.2rem;
+
+  border: 0.1rem solid $__clr_text;
+  box-sizing: border-box;
+}
+
+.navbar_item_lang_box_flag,
+.navbar_item_lang_box_flag_active {
+  position: absolute;
+  top: 0.1rem;
+
+  width: calc(40% - 0.2rem);
+  height: calc(100% - 0.2rem);
+
+  transition: left 0.4s ease-out;
+}
+
+.navbar_item_lang_box_flag {
+  opacity: 0.5;
+  left: calc(60% + 0.1rem);
+}
+
+.navbar_item_lang_box_flag_active {
+  opacity: 1;
+  left: 0.05rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 1.6rem;
+    padding: 1.6rem 5% 8rem;
+  }
+  .navbar_item_logo {
+    left: 5%;
+  }
+  .navbar_item_lang {
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 4rem;
+  }
+  .navbar_item_logo {
+    position: relative;
+    left: 0;
+  }
+  .navbar_item_lang {
+    position: relative;
+    right: 0;
+  }
+  .navbar_item_lang_txt {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.animated-backdrop {
+  &-enter {
+    opacity: 0.5;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+  }
+}

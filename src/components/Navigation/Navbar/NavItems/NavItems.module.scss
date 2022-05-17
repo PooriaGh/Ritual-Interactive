@@ -1,0 +1,59 @@
+@import '../../../../sass/config';
+
+.navbar_item_pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.navbar_item_page_link {
+  position: relative;
+
+  padding: 0.4rem 1.6rem;
+
+  color: $__clr_text;
+  letter-spacing: 0.05em;
+
+  transition: 0.2s color ease-out;
+}
+
+.navbar_item_page_link_active {
+  color: $__clr_main;
+}
+
+.navbar_item_page_link:hover {
+  color: $__clr_main;
+}
+
+.navbar_item_page_link_effect_active {
+  position: absolute;
+  transform: translateX(-50%) scale(0);
+  left: 50%;
+  bottom: -1.5rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #2ecdff 27.08%,
+    rgba(46, 205, 255, 0) 100%
+  );
+}
+
+.navbar_item_page_link_active .navbar_item_page_link_effect_active {
+  transform: translateX(-50%) scale(1);
+  transition: 0.3s transform ease-out;
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar_item_pages {
+    justify-content: space-between;
+  }
+  .navbar_item_page_link {
+    padding: 1.6rem 0;
+  }
+}

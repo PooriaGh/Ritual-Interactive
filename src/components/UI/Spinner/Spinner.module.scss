@@ -1,0 +1,101 @@
+@import '../../../sass/config';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1,
+.item2,
+.item3 {
+  border-radius: 0.1rem;
+}
+
+.item1 {
+  animation: itemAnim 1.1s ease-in 0s infinite normal;
+}
+
+.item2 {
+  animation: itemAnim 1.1s ease-in 0.3s infinite normal;
+}
+
+.item3 {
+  animation: itemAnim 1.1s ease-in 0.6s infinite normal;
+}
+
+@keyframes itemAnim {
+  0% {
+    transform: scaleY(100%);
+  }
+
+  30% {
+    transform: scaleY(100%);
+  }
+
+  50% {
+    transform: scaleY(150%);
+  }
+
+  70% {
+    transform: scaleY(100%);
+  }
+
+  100% {
+    transform: scaleY(100%);
+  }
+}
+
+// """""""""""""""""""""""""""""""
+// "Original CSS"
+
+// .main {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   height: 2rem;
+//   width: 2.8rem;
+// }
+
+// .item1,
+// .item2,
+// .item3 {
+//   border-radius: 0.1rem;
+//   height: 1.4rem;
+//   width: 0.6rem;
+// }
+
+// .item1 {
+//   animation: itemAnim 1.1s ease-in 0s infinite normal;
+// }
+
+// .item2 {
+//   animation: itemAnim 1.1s ease-in 0.3s infinite normal;
+// }
+
+// .item3 {
+//   animation: itemAnim 1.1s ease-in 0.6s infinite normal;
+// }
+
+// @keyframes itemAnim {
+//   0% {
+//     transform: scaleY(100%);
+//   }
+
+//   30% {
+//     transform: scaleY(100%);
+//   }
+
+//   50% {
+//     transform: scaleY(150%);
+//   }
+
+//   70% {
+//     transform: scaleY(100%);
+//   }
+
+//   100% {
+//     transform: scaleY(100%);
+//   }
+// }

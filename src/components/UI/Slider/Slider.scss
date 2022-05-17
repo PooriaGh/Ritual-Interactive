@@ -1,0 +1,77 @@
+@import '../../../sass/config';
+
+.animated-slider-content {
+  &-enter {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s ease-out;
+    transition-delay: 0.7s;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: 0.3s ease-out;
+  }
+}
+
+.animated-slider-img-ltr {
+  &-enter {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.3s ease-out;
+    transition-delay: 0.5s;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateX(25px);
+    transition: 0.3s ease-out;
+    transition-delay: 0.2s;
+  }
+}
+
+.animated-slider-img-rtl {
+  &-enter {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.3s ease-out;
+    transition-delay: 0.6s;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateX(-25px);
+    transition: 0.3s ease-out;
+  }
+}

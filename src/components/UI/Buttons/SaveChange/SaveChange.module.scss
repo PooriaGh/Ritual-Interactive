@@ -1,0 +1,69 @@
+@import '../../../../sass/config';
+
+.btn,
+.btn_failed,
+.btn_succeed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 100%;
+  padding: 1.2rem 0;
+
+  font: bold 2rem $__font_primary;
+  color: $__clr_background;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  border: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn {
+  background-color: $__clr_main;
+  cursor: pointer;
+}
+
+.btn_failed {
+  background-color: $__clr_secondary;
+}
+
+.btn_succeed {
+  background-color: $__clr_confirm;
+}
+
+.btn:hover:enabled {
+  background-color: $__clr_main_hover;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1200px) {
+  .btn,
+  .btn_failed,
+  .btn_succeed {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .btn,
+  .btn_failed,
+  .btn_succeed {
+    gap: 0.8rem;
+
+    font-size: 1.6rem;
+    padding: 0.8rem 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn_text {
+    display: none;
+  }
+}

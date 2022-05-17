@@ -1,0 +1,93 @@
+@import '../../../../sass/config';
+
+.game_container,
+.game_container_placeholder {
+  width: calc(25% - 2.4rem);
+  margin: 0 2.4rem 2.4rem 0;
+  box-sizing: border-box;
+
+  border: solid 0.1rem $__clr_img_border;
+  overflow: hidden;
+}
+
+.game_container {
+  cursor: pointer;
+}
+
+.game_container_placeholder {
+  position: relative;
+
+  cursor: default;
+}
+
+.game_img {
+  width: 100%;
+  height: 100%;
+
+  transition: 0.3s transform ease-out;
+}
+
+.game_img_placeholder {
+  width: 100%;
+  aspect-ratio: $__ar_image_small;
+  background-color: $__clr_placeholder;
+}
+
+.game_container:hover .game_img {
+  transform: scale(1.1);
+}
+
+.game_modal {
+  position: fixed;
+  transform: translateX(-50%);
+  top: 10%;
+  left: 50%;
+
+  max-width: 110rem;
+  max-height: 85vh;
+  width: 90%;
+  background: $__clr_background;
+  box-sizing: border-box;
+  overflow: auto;
+  z-index: 150;
+
+  border: 0.2rem solid $__clr_main_border;
+  border-radius: 0.2rem;
+}
+
+@media only screen and (min-width: 1900px) {
+  .game_container,
+  .game_container_placeholder {
+    width: calc(20% - 2.4rem);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .game_container,
+  .game_container_placeholder {
+    width: calc(20% - 2.4rem);
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .game_container,
+  .game_container_placeholder {
+    width: calc(33.3% - 2.4rem);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .game_container,
+  .game_container_placeholder {
+    width: calc(50% - 2.4rem);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .game_container,
+  .game_container_placeholder {
+    width: 100%;
+    max-width: 22rem;
+    margin: 0 0 2.4rem 0;
+  }
+}

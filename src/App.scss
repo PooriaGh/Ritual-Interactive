@@ -1,0 +1,24 @@
+.animated-page {
+  &-enter {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+    transition: all 0.4 ease-in;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: all 0.4 ease-out;
+  }
+}

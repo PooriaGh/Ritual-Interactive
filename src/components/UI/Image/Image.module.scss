@@ -1,0 +1,9 @@
+@import '../../../sass/config';
+
+.image_placeholder_container {
+  position: relative;
+
+  width: 100%;
+  background-color: $__clr_placeholder;
+  cursor: default;
+}

@@ -1,0 +1,55 @@
+@import '../../sass/config';
+
+.candle_container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1000;
+}
+
+.candle {
+  position: absolute;
+  top: 60%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  z-index: -999;
+}
+
+.candle_light {
+  position: absolute;
+  background-image: radial-gradient(#0029ff, transparent);
+  border-radius: 500px;
+  top: calc(40% - 250px);
+  left: calc(51% - 250px);
+  transform: scale(1);
+  width: 500px;
+  height: 500px;
+  filter: blur(200px);
+  opacity: 0.4;
+  animation: light 5s linear 0s infinite forwards;
+  z-index: -998;
+}
+
+@keyframes light {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.93);
+  }
+  60% {
+    transform: scale(1.07);
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,24 @@
+.animated-game-component {
+  &-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+    transition: all 0.3s ease-in;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+  }
+}

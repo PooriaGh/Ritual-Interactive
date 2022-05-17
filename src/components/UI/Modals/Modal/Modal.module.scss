@@ -1,0 +1,15 @@
+@import '../../../../sass/config';
+
+.modal_default {
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+
+  width: 90%;
+  max-height: 85vh;
+  background: $__clr_background;
+  box-sizing: border-box;
+
+  border: 0.2rem solid $__clr_main_border;
+  border-radius: 0.2rem;
+}

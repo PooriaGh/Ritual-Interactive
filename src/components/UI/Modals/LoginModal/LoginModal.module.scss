@@ -1,0 +1,21 @@
+@import '../../../../sass/config';
+
+.modal_login {
+  position: fixed;
+  transform: translateX(-50%);
+  bottom: 10%;
+  left: 50%;
+
+  width: 40%;
+  background-color: $__clr_background;
+  box-sizing: border-box;
+
+  border: 0.2rem solid $__clr_main_border;
+  border-radius: 0.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal_login {
+    width: auto;
+  }
+}
